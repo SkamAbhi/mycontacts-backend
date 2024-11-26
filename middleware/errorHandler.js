@@ -1,4 +1,4 @@
-const { constants } = require("../../constants");
+const { constants } = require("../constants");
 const errorHandler = (err, req, res, next) => {
   const statusCode = res.statusCode ? res.statusCode : 500;
   switch (statusCode) {
@@ -28,14 +28,14 @@ const errorHandler = (err, req, res, next) => {
         message: err.message,
         stackTrace: err.stack,
       });
-      case constants.SERVER_ERROR:
+    case constants.SERVER_ERROR:
       res.json({
         title: "Server Error",
         message: err.message,
         stackTrace: err.stack,
       });
     default:
-        console.log("No Error ")
+      console.log("No Error ");
       break;
   }
 };
