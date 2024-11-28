@@ -64,17 +64,6 @@ ACCESS_TOKEN_SECRET=<your_jwt_secret_key>
   - `email` (string): User's email address.
   - `password` (string): User's password.
 
-### Update User
-
-- **URL**: `/api/users/update`
-- **Method**: `PUT`
-- **Headers**:
-  - `Authorization`: Bearer token obtained after logging in.
-- **Body Parameters**:
-  - `user` (string, optional): New username.
-  - `email` (string, optional): New email address.
-  - `password` (string, optional): New password.
-
 
 
 ## Contact Endpoints
