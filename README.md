@@ -75,14 +75,7 @@ ACCESS_TOKEN_SECRET=<your_jwt_secret_key>
   - `email` (string, optional): New email address.
   - `password` (string, optional): New password.
 
-### Log Out
 
-- **URL**: `/api/auth/logout`
-- **Method**: `GET`
-- **Headers**:
-  - `Authorization`: Bearer token obtained after logging in.
-
----
 
 ## Contact Endpoints
 
